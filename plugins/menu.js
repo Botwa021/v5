@@ -194,6 +194,7 @@ text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ?
       level, limit, name, weton, week, date, dateIslamic, wib, wit, wita, time, totalreg, rtotalreg, role
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
+  conn.sendFile(m.chat, 'https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/7246717355060955910.mp3', '', null, m, true, { type: "audioMessage", ptt: false, seconds: 982829822929 })
   conn.relayMessage(m.chat, {
   extendedTextMessage:{
                 text: text, 
@@ -203,7 +204,7 @@ text = typeof conn.menu == 'string' ? conn.menu : typeof conn.menu == 'object' ?
                         mediaType: 1,
                         previewType: 0,
                         renderLargerThumbnail: true,
-                        thumbnailUrl: 'https://telegra.ph/file/f444fe4ebfb172cd42659.jpg',
+                        thumbnailUrl: 'https://telegra.ph/file/5b5da9ec86f3f41b6952f.jpg',
                         sourceUrl: 'https://chat.whatsapp.com/K4k4vkiENh11HMBMCZ8eox'
                     }
                 }, mentions: [m.sender]
