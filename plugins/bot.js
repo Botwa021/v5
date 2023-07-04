@@ -4,19 +4,19 @@ let handler = async (m, { conn }) => {
     let uptimex = clockString(_uptime)
 
     let tio = `
-*_STATUS BOT ONLINE✅_*
+*STATUS BOT ONLINE*
     `.trim()
 conn.relayMessage(m.chat, {
   extendedTextMessage:{
                 text: tio, 
                 contextInfo: {
                      externalAdReply: {
-                        title: 'ketik #menu untuk memulai ',
+                        title: 'мυʀѕι∂ вσт-χмℓ',
                          mediaType: 1,
                         previewType: 0,
                         renderLargerThumbnail: true,
-                        thumbnailUrl: 'https://telegra.ph/file/d6202dfdc68e72b669631.jpg',
-                        sourceUrl: 'https://chat.whatsapp.com/FmhN8kxZf9f9qjkCZCBF97'
+                        thumbnailUrl: 'https://telegra.ph/file/6621726336a48c1d43904.jpg',
+                        sourceUrl: 'https://chat.whatsapp.com/K4k4vkiENh11HMBMCZ8eox'
                     }
                 }, mentions: [m.sender]
 }}, {})
