@@ -23,13 +23,13 @@ var { youtubeSearch } = require('@bochilteam/scraper');
 
     let web = `https://yt.btch.bz/downloadAudio?URL=${url}&videoName=video`
     var tmb = thumbnail
-    var captionvid = `  ∘ Title: ${title}
-  ∘ Published: ${publishedTime}
-  ∘ Duration: ${durationH}
-  ∘ Second: ${durationS}
-  ∘ Views: ${viewH}  
-  ∘ Url:  ${url}
-  ∘ Description: ${description}`
+    var captionvid = `*Judul* : ${title}
+*Publik* : ${publishedTime}
+*Durasi Video* : ${durationH}
+*Kecepatan Durasi* : ${durationS}
+*Views* : ${viewH}  
+*Link* : ${url}
+*Deskripsi* : ${description}`
     var pesan = await conn.sendMessage(m.chat, {
     text: captionvid,
     contextInfo: {
@@ -73,4 +73,4 @@ async function cut(url) {
 }
 async function delay(ms) {
    await new Promise(resolve => setTimeout(resolve, ms));
-}
+       }
