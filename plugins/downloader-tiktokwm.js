@@ -1,9 +1,9 @@
 const fetch = require("node-fetch");
 
 const handler = async (m, { conn, args, usedPrefix, command }) => {
-  if (!args[0]) throw `Masukkan URL!\n\nContoh:\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`;
+  if (!args[0]) throw `Masukkan URL!\n\nContoh :\n${usedPrefix + command} https://vm.tiktok.com/ZGJAmhSrp/`;
   if (!args[0].match(/tiktok/gi)) throw `URL Tidak Ditemukan!`;
-  m.reply("Tunggu sebentar...");  
+  m.reply("_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_");  
 		const url = args[0];
 		const apis = await fetch(`https://xzn.wtf/api/tiktok?url=${args[0]}&apikey=Akiraabotz`);
 		
@@ -18,9 +18,9 @@ duration,
 audio
 } = json.data
 await conn.sendFile(m.chat, play, 'tiktok.mp4', `
-*Deskripsi*: ${title}
-\n*Username*: ${region}
-\n*Durasi*: ${duration} detik`, m)
+*Deskripsi* : ${title}
+\n *Username Creator* : ${region}
+\n *Durasi Video*: ${duration} detik`, m)
 };
 handler.help = ['tiktok']
 handler.command = /^(tiktok|tt|tiktokdl|tiktoknowm|dlttwm)$/i
